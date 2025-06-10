@@ -1,4 +1,4 @@
-import Sandbox from "./tutorial/01-search-by-text/Sandbox";
+import Sandbox from "./tutorial/04-user-interactions/Sandbox";
 
 function App() {
   return (
