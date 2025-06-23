@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Form from "../Form";
 
-const getFormElements = () => {
+export const getFormElements = () => {
   return {
     titleInput: screen.getByRole("textbox", { name: /title/i }),
     descriptionInput: screen.getByRole("textbox", { name: /description/i }),
