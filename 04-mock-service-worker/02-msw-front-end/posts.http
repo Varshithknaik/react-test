@@ -4,7 +4,7 @@ GET http://localhost:4000/posts
 
 ### Get a single post
 
-GET http://localhost:4000/posts/1
+GET http://localhost:4000/posts/8547
 
 ### Create post
 
@@ -18,7 +18,7 @@ content-type:application/json
 
 ### Update post
 
-PUT http://localhost:4000/posts/1
+PUT http://localhost:4000/posts/8547
 content-type:application/json
 
 {

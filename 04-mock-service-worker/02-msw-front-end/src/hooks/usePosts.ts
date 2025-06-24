@@ -12,6 +12,7 @@ export type PostWithoutId = Omit<Post, 'id'>;
 const API_URL = 'http://localhost:4000/posts';
 
 export const usePosts = () => {
+
   const [posts, setPosts] = useState<Post[]>([]);
   const [error, setError] = useState<string>('');
 
@@ -20,7 +21,7 @@ export const usePosts = () => {
       const { data } = await axios.get<Post[]>(API_URL);
       setPosts(data);
       setError('');
-    } catch (error) {
+    } catch (_) {
       setError('Failed to fetch posts');
     }
   };
@@ -31,7 +32,7 @@ export const usePosts = () => {
       });
       await fetchPosts();
       setError('');
-    } catch (error) {
+    } catch (_) {
       setError('Failed to create post');
     }
   };
@@ -51,7 +52,7 @@ export const usePosts = () => {
 
       await fetchPosts();
       setError('');
-    } catch (error) {
+    } catch (_) {
       setError('Failed to like post');
     }
   };
@@ -60,7 +61,7 @@ export const usePosts = () => {
       await axios.delete(`${API_URL}/${postId}`);
       await fetchPosts();
       setError('');
-    } catch (error) {
+    } catch (_) {
       setError('Failed to delete post');
     }
   };

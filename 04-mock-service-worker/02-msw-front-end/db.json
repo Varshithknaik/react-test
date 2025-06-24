@@ -5,6 +5,16 @@
       "title": "node",
       "likes": 13,
       "like": 1
+    },
+    {
+      "title": "updated title",
+      "likes": 100,
+      "id": "8547"
+    },
+    {
+      "id": "5c6c",
+      "title": "new post title",
+      "likes": 0
     }
   ]
 }
