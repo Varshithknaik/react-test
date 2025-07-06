@@ -34,7 +34,7 @@ describe('Form Component', () => {
 
   })
 
-  test('required title inpit before submission', async () => {
+  test('required title input before submission', async () => {
     const { button } = getFormElements();
     await user.click(button);
     expect(mockOnSubmit).not.toHaveBeenCalled();
